@@ -102,8 +102,11 @@ alias install='sudo pacman -S'
 alias search='sudo pacman -Ss'
 # alias to uninstall packages
 alias uninstall='sudo pacman -Rns'
-alias yaysua="yay -Sua --noconfirm"              # update only AUR pkgs
-alias yaysyu="yay -Syu --noconfirm"              # update standard pkgs and AUR pkgs
+
+#alias for yay
+#alias yaysua="yay -Sua --noconfirm"              # update only AUR pkgs
+#alias yaysyu="yay -Syu --noconfirm"              # update standard pkgs and AUR pkgs
+
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
 # alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
