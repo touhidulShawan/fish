@@ -33,8 +33,6 @@ alias r="ranger"
 alias start_wifi='nmcli radio wifi on'
 alias stop_wifi='nmcli radio wifi off'
 
-alias ls="ls"
-
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -74,7 +72,6 @@ alias yta-opus="youtube-dl --extract-audio --audio-format opus "
 alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
-
 
 # alias for exit
 alias e='exit'
