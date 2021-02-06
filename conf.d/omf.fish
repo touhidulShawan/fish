@@ -49,7 +49,8 @@ alias fgrep='fgrep --color=auto'
 # alias for my lsd command replace for ls
 
 alias ls='lsd -hA --group-dirs first'
-alias l='ls -l'
+alias l='lsd'
+alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
