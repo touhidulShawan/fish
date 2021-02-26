@@ -90,6 +90,9 @@ alias del='sudo rm -r'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown'
 
+# [bat as MANPAGER]
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 # alias pacman and yay
 
 # alias for update package
