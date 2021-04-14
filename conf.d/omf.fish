@@ -87,8 +87,9 @@ alias cp='cp -r -g'
 alias del='sudo rm -r'
 
 # alias for reboot and shutdown
-alias reboot='sudo reboot'
-alias shutdown='sudo shutdown'
+alias reboot='systemctl reboot'
+alias shutdown='systemctl poweroff'
+alias suspend='systemctl suspend'
 
 # [bat as MANPAGER]
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
