@@ -117,6 +117,10 @@ alias mirror='sudo reflector --latest 10 --protocol https --sort rate --save /et
 
 starship init fish | source
 
+### RANDOM COLOR SCRIPT ###
+colorscript random
+
+
 # Start X at login
 #if status is-login
 #    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
