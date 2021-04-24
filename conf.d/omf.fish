@@ -15,10 +15,11 @@ set -q XDG_DATA_HOME
 # Load Oh My Fish configuration.
 source $OMF_PATH/init.fish
 
-set -x EDITOR nvim
-
+# Export
+set fish_greeting
 set TERM "xterm-256color"
-
+set EDITOR "nvim"
+set VISUAL "nvim"
 
 # alias for bashmount
 alias bm='bashmount'
