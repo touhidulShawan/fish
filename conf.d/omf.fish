@@ -59,6 +59,7 @@ alias fgrep='fgrep --color=auto'
 # alias for my exa command replace for ls
 
 alias ls='exa -a --icons --sort=name --color=always --group-directories-first'
+alias la='exa --icons --sort=name -1'
 alias ll='exa -al --icons --color=always --group-directories-first'
 alias lt='exa -aT --icons --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\." --icons'
