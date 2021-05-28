@@ -49,20 +49,19 @@ alias fgrep='fgrep --color=auto'
 
 # alias for my lsd command replace for ls
 
-alias ls='lsd -hA --group-dirs first'
-alias l='lsd'
-alias ll='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+#alias ls='lsd -hA --group-dirs first'
+#alias l='lsd'
+#alias ll='ls -l'
+#alias la='ls -a'
+#alias lla='ls -la'
+#alias lt='ls --tree'
 
 # alias for my exa command replace for ls
 
-#alias ls='exa -al --color=always --group-directories-first'
-#alias la='exa -a --color=always --group-directories-first'
-#alias ll='exa -l --color=always --group-directories-first'
-#alias lt='exa -aT --color=always --group-directories-first'
-#alias l.='exa -a | egrep "^\."'
+alias ls='exa -a --icons --sort=name --color=always --group-directories-first'
+alias ll='exa -al --icons --color=always --group-directories-first'
+alias lt='exa -aT --icons --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\." --icons'
 
 
 ## get top process eating memory
