@@ -128,7 +128,7 @@ alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
 # alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
 # update mirrorlist using reflector
-#alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirror='sudo reflector --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
