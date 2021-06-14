@@ -42,6 +42,16 @@ alias .4='cd ../../..'
 alias .5='cd ../../../..'
 alias .6='cd ../../../../..'
 
+# navigations of home folders
+alias desktop="cd ~/Desktop"
+alias downloads="cd ~/Downloads"
+alias learn="cd ~/Learn"
+alias pictures="cd ~/Pictures"
+alias react="cd ~/React"
+alias repo="cd ~/Repository"
+alias temp="cd ~/Temp"
+alias workspace="cd ~/Workspace"
+
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
