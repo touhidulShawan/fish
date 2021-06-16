@@ -34,6 +34,9 @@ alias r="ranger"
 alias start_wifi='nmcli radio wifi on'
 alias stop_wifi='nmcli radio wifi off'
 
+# alias to change wallpaper randomly
+alias w='nitrogen --set-zoom-fill --random ~/Pictures/wallpaper'
+
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
