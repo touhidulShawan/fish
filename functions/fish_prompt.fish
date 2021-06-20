@@ -1,1 +1,1 @@
-/home/shawan/.local/share/omf/themes/sashimi/fish_prompt.fish
+/home/shawan/.local/share/omf/themes/emoji-powerline/fish_prompt.fish
