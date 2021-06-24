@@ -7,14 +7,6 @@
 # |_|    |_____|_____/|_|  |_|
 # -----------------------------
 
-# Path to Oh My Fish install.
-set -q XDG_DATA_HOME
-  and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
-  or set -gx OMF_PATH "$HOME/.local/share/omf"
-
-# Load Oh My Fish configuration.
-source $OMF_PATH/init.fish
-
 # Export
 set fish_greeting
 set TERM "xterm-256color"
@@ -122,20 +114,15 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 alias jctl="journalctl -p 3 -xb"
 
 
-# alias pacman and yay
-
-# alias for update package
+# alias pacman and paru
 alias update='sudo pacman -Syyu'
-# alias to install pacman packages
 alias install='sudo pacman -S'
-# alias search package
 alias search='sudo pacman -Ss'
-# alias to uninstall packages
 alias uninstall='sudo pacman -Rns'
 
-#alias for yay
-#alias yaysua="yay -Sua --noconfirm"              # update only AUR pkgs
-#alias yaysyu="yay -Syu --noconfirm"              # update standard pkgs and AUR pkgs
+#alias for paru
+#alias psua="yay -Sua --noconfirm"              # update only AUR pkgs
+#alias psyu="yay -Syu --noconfirm"              # update standard pkgs and AUR pkgs
 
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
 # alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
@@ -150,13 +137,12 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 
 starship init fish | source
 
-### RANDOM COLOR SCRIPT ###
-colorscript random
-
-
 # Start X at login
 #if status is-login
 #    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
 #        exec startx -- -keeptty
 #    end
 #end
+#
+# Created by `pipx` on 2021-06-24 11:46:10
+set PATH $PATH /home/shawan/.local/bin
