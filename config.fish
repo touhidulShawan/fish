@@ -9,7 +9,6 @@
 
 # Export
 set fish_greeting
-set TERM "xterm-256color"
 set --export EDITOR nvim
 set --export GIT_EDITOR nvim
 
