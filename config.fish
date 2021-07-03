@@ -10,8 +10,14 @@
 # Export
 set fish_greeting
 set TERM "xterm-256color"
-set EDITOR "nvim"
-set VISUAL "nvim"
+set --export EDITOR nvim
+set --export GIT_EDITOR nvim
+
+# Created by `pipx` on 2021-06-24 11:46:10
+set PATH $PATH /home/shawan/.local/bin
+
+### Abbreviations (expanded aliases)
+abbr c 'code .'
 
 # alias for bashmount
 alias bm='bashmount'
@@ -114,25 +120,23 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 alias jctl="journalctl -p 3 -xb"
 
 
-# alias pacman and paru
+# alias pacman
 alias update='sudo pacman -Syyu'
 alias install='sudo pacman -S'
 alias search='sudo pacman -Ss'
 alias uninstall='sudo pacman -Rns'
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
 
 #alias for paru
-#alias psua="yay -Sua --noconfirm"              # update only AUR pkgs
-#alias psyu="yay -Syu --noconfirm"              # update standard pkgs and AUR pkgs
-
-alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
-# alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+alias psua="paru -Sua --noconfirm"
+alias psyu="paru -Syu --noconfirm"
 
 # update mirrorlist using reflector
 alias mirror="sudo reflector --verbose --latest 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
-
 
 starship init fish | source
 
@@ -143,5 +147,3 @@ starship init fish | source
 #    end
 #end
 #
-# Created by `pipx` on 2021-06-24 11:46:10
-set PATH $PATH /home/shawan/.local/bin
