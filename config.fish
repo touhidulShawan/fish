@@ -17,15 +17,11 @@ set PATH $PATH /home/shawan/.local/bin
 
 ### Abbreviations (expanded aliases)
 abbr c 'code .'
-
-# alias for bashmount
-alias bm='bashmount'
-
-#alias for alsamixer
-alias al='alsamixer'
-
-# alias for ranger
-alias r="ranger"
+abbr bm 'bashmount'
+abbr al 'alsamixer'
+abbr r 'ranger'
+abbr e 'exit'
+abbr cl 'clear'
 
 # alias for wifi on/OFF
 alias start_wifi='nmcli radio wifi on'
@@ -57,17 +53,7 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# alias for my lsd command replace for ls
-
-#alias ls='lsd -hA --group-dirs first'
-#alias l='lsd'
-#alias ll='ls -l'
-#alias la='ls -a'
-#alias lla='ls -la'
-#alias lt='ls --tree'
-
 # alias for my exa command replace for ls
-
 alias la='exa -al --icons --sort=name --color=always --group-directories-first'
 alias ls='exa -a --icons --sort=name --group-directories-first'
 alias ll='exa -l --icons --color=always --group-directories-first'
@@ -93,12 +79,6 @@ alias yta-opus="youtube-dl --extract-audio --audio-format opus "
 alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
-
-# alias for exit
-alias e='exit'
-
-#alias for clear
-alias c='clear'
 
 #alias for copy
 alias cp='cp -r -g -i'
@@ -138,11 +118,3 @@ alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/p
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
 starship init fish | source
-
-# Start X at login
-#if status is-login
-#    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
-#        exec startx -- -keeptty
-#    end
-#end
-#
