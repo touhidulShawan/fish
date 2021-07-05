@@ -11,6 +11,7 @@
 set fish_greeting
 set --export EDITOR nvim
 set --export GIT_EDITOR nvim
+set --universal nvm_default_version v16.4.1
 
 # Created by `pipx` on 2021-06-24 11:46:10
 set PATH $PATH /home/shawan/.local/bin
