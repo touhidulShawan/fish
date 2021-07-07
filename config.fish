@@ -24,6 +24,7 @@ abbr r 'ranger'
 abbr e 'exit'
 abbr cl 'clear'
 abbr bp 'bpytop'
+abbr n 'nvim .'
 
 # alias for wifi on/OFF
 alias start_wifi='nmcli radio wifi on'
