@@ -23,6 +23,7 @@ abbr al 'alsamixer'
 abbr r 'ranger'
 abbr e 'exit'
 abbr cl 'clear'
+abbr bp 'bpytop'
 
 # alias for wifi on/OFF
 alias start_wifi='nmcli radio wifi on'

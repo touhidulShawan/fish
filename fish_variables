@@ -9,6 +9,7 @@ SETUVAR Z_EXCLUDE:\x5e/home/shawan\x24
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_al:alsamixer
 SETUVAR _fish_abbr_bm:bashmount
+SETUVAR _fish_abbr_bp:bpytop
 SETUVAR _fish_abbr_c:code\x20\x2e
 SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_e:exit
