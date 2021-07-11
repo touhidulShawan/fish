@@ -25,6 +25,7 @@ abbr e 'exit'
 abbr cl 'clear'
 abbr bp 'bpytop'
 abbr n 'nvim .'
+abbr berry 'yarn set version berry'
 
 # alias for wifi on/OFF
 alias start_wifi='nmcli radio wifi on'
