@@ -11,7 +11,7 @@
 set fish_greeting
 set --export EDITOR nvim
 set --export GIT_EDITOR nvim
-set --universal nvm_default_version v16.4.1
+set --universal nvm_default_version v16.4.2
 
 # Created by `pipx` on 2021-06-24 11:46:10
 set PATH $PATH /home/shawan/.local/bin
@@ -26,6 +26,7 @@ abbr cl 'clear'
 abbr bp 'bpytop'
 abbr n 'nvim .'
 abbr berry 'yarn set version berry'
+abbr gpkg 'npm install -g eslint typescript nodemon prettier neovim yarn'
 
 # alias for wifi on/OFF
 alias start_wifi='nmcli radio wifi on'
