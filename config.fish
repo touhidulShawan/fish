@@ -32,8 +32,13 @@ abbr gpkg 'npm install -g eslint typescript nodemon prettier neovim yarn'
 alias start_wifi='nmcli radio wifi on'
 alias stop_wifi='nmcli radio wifi off'
 
-# alias to change wallpaper randomly
-alias w='nitrogen --set-zoom-fill --random ~/Pictures'
+# alias to change wallpaper randomly from folders
+alias w='nitrogen --set-zoom-fill --random ~/Pictures/Anime3'
+alias w2='nitrogen --set-zoom-fill --random ~/Pictures/Anime2'
+alias w3='nitrogen --set-zoom-fill --random ~/Pictures/Anime-Old'
+alias w4='nitrogen --set-zoom-fill --random ~/Pictures/wallpaper'
+alias w5='nitrogen --set-zoom-fill --random ~/Pictures/wallpapers'
+
 
 # navigation
 alias ..='cd ..'
