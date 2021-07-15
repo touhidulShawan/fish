@@ -1,4 +1,4 @@
-#-----------------------------
+#----------------------------
 #______ _____  _____ _    _
 # |  ____|_   _|/ ____| |  | |
 # | |__    | | | (___ | |__| |
@@ -11,6 +11,8 @@
 set fish_greeting
 set --export EDITOR nvim
 set --export GIT_EDITOR nvim
+
+# set default node version
 set --universal nvm_default_version v16.4.2
 
 # Created by `pipx` on 2021-06-24 11:46:10
