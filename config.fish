@@ -13,7 +13,7 @@ set --export EDITOR nvim
 set --export GIT_EDITOR nvim
 
 # set default node version
-set --universal nvm_default_version v16.4.2
+set --universal nvm_default_version v16.5.0
 
 # Created by `pipx` on 2021-06-24 11:46:10
 set PATH $PATH /home/shawan/.local/bin
