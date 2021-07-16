@@ -70,7 +70,6 @@ alias la='exa -al --icons --sort=name --color=always --group-directories-first'
 alias ls='exa -a --icons --sort=name --group-directories-first'
 alias ll='exa -l --icons --color=always --group-directories-first'
 alias lt='exa -aT --icons --color=always --group-directories-first'
-alias l.='exa -a | egrep "^\."'
 
 
 ## get top process eating memory
